@@ -1,5 +1,7 @@
 // Your code here.
 
+const { arrayBuffer } = require("stream/consumers");
+
 function countChar(cadena,letra){
 
   let cantidad = 0;
@@ -15,3 +17,7 @@ function countChar(cadena,letra){
 
 console.log(countChar("kakkerlak", "k"));
 // → 4
+
+
+
+
