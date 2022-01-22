@@ -4,6 +4,7 @@ function loop(start,test,update,body){
     };
 }
 
+loop(10, n => n > 0, n => n - 1, n => n % 2 != 0 ? console.log(n + ": es impar") : console.log(n + ": es par")) ;
 
 
 loop(3, n => n > 0, n => n - 1, console.log);
