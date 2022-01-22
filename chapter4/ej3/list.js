@@ -1,22 +1,16 @@
 // Your code here.
 
 console.log(arrayToList([10, 20, 30, 40 ]));
-
 // → {value: 10, rest: {value: 20, rest: null}}
-
 
 console.log(listToArray(arrayToList([10, 20, 30])));
 // → [10, 20, 30]
 
-
 console.log(prepend(20, prepend(30, null)));
 // → {value: 10, rest: {value: 20, rest: null}}
 
-
 console.log(nth(arrayToList([10, 20, 30]), 1));
 // → 20
-
-
 
 function arrayToList(coso){
 
@@ -50,8 +44,6 @@ function listToArray(coso){
   return array;
 }
 
-
-
 function prepend(value1,rest1){
   
   lista = { value:value1,
@@ -60,7 +52,6 @@ function prepend(value1,rest1){
   return lista;
 }
 
-
 function nth(lista, posicion){
   
   if (posicion == 0){
@@ -68,6 +59,5 @@ function nth(lista, posicion){
   }else
   {
     return nth(lista.rest, posicion - 1);
-  };  
-  
+  };    
 }
